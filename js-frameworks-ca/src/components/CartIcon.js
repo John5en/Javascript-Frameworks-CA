@@ -1,7 +1,7 @@
 import React from "react";
-import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useCart } from "./CartContext";
+import customCartIcon from "../shopping cart icon.png";
 import "../styles.css";
 
 function CartIcon() {
@@ -9,7 +9,11 @@ function CartIcon() {
 
   return (
     <Link to="/checkout" className="cart-icon">
-      <FaShoppingCart />
+      <img
+        src={customCartIcon}
+        alt="Custom Cart Icon"
+        style={{ width: "40px", height: "30px" }}
+      />
       {cartState.cartItems.length > 0 && (
         <span className="cart-count">{cartState.cartItems.length}</span>
       )}
