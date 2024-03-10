@@ -18,6 +18,8 @@ This is a site where users can view different products and add them to a cart, a
 ### Installing
 Clone the repo.
 
+Make sure to have Node.js and npm installed.
+
 Install the dependencies:
 
 npm install
